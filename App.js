@@ -100,17 +100,18 @@ text_footer: {
     backgroundColor: '#009387'
   },
   header: {
-      flex: 2,
-      justifyContent: 'center',
-      alignItems: 'center'
+      flex: 1,
+      justifyContent: 'flex-end',
+      paddingHorizontal: 20,
+      paddingBottom: 50
   },
   footer: {
-      flex: 1,
-      backgroundColor: '#fff',
-      borderTopLeftRadius: 30,
-      borderTopRightRadius: 30,
-      paddingVertical: 50,
-      paddingHorizontal: 30
+    flex: 3,
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 30
   },
   logo: {
       width: height_logo,
@@ -157,6 +158,9 @@ const splashScreen = () => {
   );
 };
 const loginScreen = () => {
+
+
+  const [data, setData] = React.useState({});
   return(<View style={styles.container}>
       <View style = {styles.header}>
         <Text style = {styles.text_header}> Welcome!</Text>
