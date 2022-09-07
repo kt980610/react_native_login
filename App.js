@@ -155,7 +155,7 @@ const loginScreen = () => {
         <Text style = {styles.text_header}> Welcome!</Text>
         </View>
         <View style = {styles.footer}>
-          <Text> Footer</Text>
+          <Text style = {styles.text_footer}> Email</Text>
           </View>
           </View>
   );
