@@ -141,7 +141,7 @@ const splashScreen = () => {
   );
 };
 const loginScreen = () => {
-  return(<><><><><View style={styles.container}></View><View style={styles.header}></View></><Text> Header</Text></View><View style={styles.footer}></View></><Text> Footer </Text></>
+  return(<><View style={styles.container}></View><View style={styles.header}></View></>
   );
 };
 
