@@ -74,6 +74,15 @@ const styles = StyleSheet.create({
     marginTop: 32,
     paddingHorizontal: 24,
   },
+  text_header: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 30
+},
+text_footer: {
+    color: '#05375a',
+    fontSize: 18
+},
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
@@ -141,7 +150,11 @@ const splashScreen = () => {
   );
 };
 const loginScreen = () => {
-  return(<><View style={styles.container}></View><View style={styles.header}></View></>
+  return(<View style={styles.container}>
+      <View style = {styles.header}>
+        <Text style = {styles.text_header}> Welcome!</Text>
+        </View>
+        <View style = {styles.footer}></View>
   );
 };
 
