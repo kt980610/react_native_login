@@ -163,7 +163,11 @@ const loginScreen = () => {
         </View>
         <View style = {styles.footer}>
           <Text style = {styles.text_footer}> Email</Text>
-          <View style = {styles.action}></View>
+          <View style = {styles.action}>
+            <TextInput
+            placeholder="your email"
+            style = {styles.TextInput} />
+          </View>
           </View>
           </View>
   );
