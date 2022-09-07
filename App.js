@@ -9,6 +9,8 @@
 import React from 'react';
 import type {Node} from 'react';
 import {
+  Alert,
+  Platform,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -16,6 +18,8 @@ import {
   StyleSheet,
   Image,
   Text,
+  TextInput,
+  TouchableOpacity,
   useColorScheme,
   View,
 } from 'react-native';
@@ -27,7 +31,10 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+import * as Animatable from 'react-native-animatable';
+import LinearGradient from 'react-native-linear-gradient';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Feather from 'react-native-vector-icons/Feather';
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -61,7 +68,7 @@ const App: () => Node = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  return(splashScreen());
+  return(loginScreen());
 };
 const {height} = Dimensions.get("screen");
 const height_logo = height * 0.28;
@@ -135,6 +142,9 @@ const Cat = () => {
 const splashScreen = () => {
   return(<><><View style={styles.sectionContainer}></View><View style={styles.Header}></View><Image source={{ uri: 'https://github.com/itzpradip/react-navigation-v5-mix/blob/master/assets/logo.png?raw=true' }} style={styles.logo} resizeMode ="stretch" /></><Text>Hello, I am your cat!</Text></>
   );
+};
+const loginScreen = () => {
+  return(<View style={styles.container}></View>);
 };
 
 export default App;
