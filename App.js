@@ -160,7 +160,12 @@ const splashScreen = () => {
 const loginScreen = () => {
 
 
-  const [data, setData] = React.useState({});
+  const [data, setData] = React.useState({
+        username: '',
+        password: '',
+        check_textInputChange: false,
+        secureTextEntry: true,
+  });
   return(<View style={styles.container}>
       <View style = {styles.header}>
         <Text style = {styles.text_header}> Welcome!</Text>
