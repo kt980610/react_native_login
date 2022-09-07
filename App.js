@@ -141,6 +141,13 @@ text_footer: {
       color: 'white',
       fontWeight: 'bold'
   },
+  action: {
+    flexDirection: 'row',
+    marginTop: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#f2f2f2',
+    paddingBottom: 5
+},
 });
 const Cat = () => {
   return <Text>Hello, I am your cat!</Text>;
@@ -156,6 +163,7 @@ const loginScreen = () => {
         </View>
         <View style = {styles.footer}>
           <Text style = {styles.text_footer}> Email</Text>
+          <View style = {styles.action}></View>
           </View>
           </View>
   );
