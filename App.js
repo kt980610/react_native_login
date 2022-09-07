@@ -167,6 +167,14 @@ const loginScreen = () => {
             <TextInput
             placeholder="your email"
             style = {styles.TextInput} />
+            
+          </View>
+          <Text style = {styles.text_footer}> Password</Text>
+          <View style = {styles.action}>
+            <TextInput
+            placeholder="your password"
+            style = {styles.TextInput} />
+            
           </View>
           </View>
           </View>
