@@ -141,7 +141,7 @@ const splashScreen = () => {
   );
 };
 const loginScreen = () => {
-  return(<View style={styles.container}></View>);
+  return(<><View style={styles.container}></View><View style={styles.header}></View></>);
 };
 
 export default App;
