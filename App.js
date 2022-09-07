@@ -167,19 +167,19 @@ const loginScreen = () => {
         secureTextEntry: true,
   });
   const textInputChange = (val) => {
-    if( val.trim().length >= 4 ) {
+    if( val.trim().length > 0 ) {
         setData({
             ...data,
             username: val,
             check_textInputChange: true,
-            isValidUser: true
+            
         });
     } else {
         setData({
             ...data,
             username: val,
             check_textInputChange: false,
-            isValidUser: false
+            
         });
     }
 }
