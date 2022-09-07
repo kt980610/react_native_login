@@ -169,7 +169,7 @@ const loginScreen = () => {
             style = {styles.TextInput} />
             
           </View>
-          <Text style = {styles.text_footer}> Password</Text>
+          <Text style = {[styles.text_footer, {marginTop: 35}]}> Password</Text>
           <View style = {styles.action}>
             <TextInput
             placeholder="your password"
