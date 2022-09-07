@@ -172,6 +172,7 @@ const loginScreen = () => {
           <Text style = {[styles.text_footer, {marginTop: 35}]}> Password</Text>
           <View style = {styles.action}>
             <TextInput
+            secureTextEntry={true}
             placeholder="your password"
             style = {styles.TextInput} />
             
