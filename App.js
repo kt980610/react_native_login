@@ -166,6 +166,23 @@ const loginScreen = () => {
         check_textInputChange: false,
         secureTextEntry: true,
   });
+  const textInputChange = (val) => {
+    if( val.trim().length >= 4 ) {
+        setData({
+            ...data,
+            username: val,
+            check_textInputChange: true,
+            isValidUser: true
+        });
+    } else {
+        setData({
+            ...data,
+            username: val,
+            check_textInputChange: false,
+            isValidUser: false
+        });
+    }
+}
   return(<View style={styles.container}>
       <View style = {styles.header}>
         <Text style = {styles.text_header}> Welcome!</Text>
@@ -175,7 +192,8 @@ const loginScreen = () => {
           <View style = {styles.action}>
             <TextInput
             placeholder="your email"
-            style = {styles.TextInput} />
+            style = {styles.TextInput} 
+            onChangeText = {(val) => textInputChange(val)}/>
             
           </View>
           <Text style = {[styles.text_footer, {marginTop: 35}]}> Password</Text>
