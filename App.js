@@ -183,6 +183,22 @@ const loginScreen = () => {
         });
     }
 }
+const handlePasswordChange = (val) => {
+  if( val.trim().length >= 5 ) {
+      setData({
+          ...data,
+          password: val,
+          isValidPassword: true
+      });
+  } else {
+      setData({
+          ...data,
+          password: val,
+          isValidPassword: false
+      });
+  }
+}
+
   return(<View style={styles.container}>
       <View style = {styles.header}>
         <Text style = {styles.text_header}> Welcome!</Text>
@@ -201,7 +217,8 @@ const loginScreen = () => {
             <TextInput
             secureTextEntry={true}
             placeholder="your password"
-            style = {styles.TextInput} />
+            style = {styles.TextInput}
+            onChangeText = {(val) => handlePasswordChange(val)} />
             
           </View>
           </View>
