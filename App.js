@@ -129,11 +129,14 @@ text_footer: {
   button: {
       alignItems: 'center',
       marginTop: 0,
-      backgroundColor: "#DDDDDD",
+      backgroundColor: '#009387',
+      borderRadius: 50,
+      
+      
   },
   signIn: {
-      width: 150,
-      height: 40,
+      alignItems: 'center',
+      height: 35,
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 50,
@@ -223,7 +226,7 @@ const handlePasswordChange = (val) => {
             
           </View>
           <View style={styles.button}>
-          <Text style = {styles.signIn}> Sign In</Text>
+          <Text style = {[styles.signIn, { color: '#fff'}, { fontWeight: 'bold'}, {fontSize: 20}]}> Sign In</Text>
                  </View>
           </View>
           </View>
