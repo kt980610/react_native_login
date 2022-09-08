@@ -131,6 +131,7 @@ text_footer: {
       marginTop: 0,
       backgroundColor: '#009387',
       borderRadius: 50,
+      onPress: ()=>{},
       
       
   },
@@ -225,9 +226,10 @@ const handlePasswordChange = (val) => {
             onChangeText = {(val) => handlePasswordChange(val)} />
             
           </View>
-          <View style={styles.button}>
+          <TouchableOpacity style= {[styles.signIn, {color: '#009387'}, {backgroundColor: '#009387'},{ alignItems: 'center'}, {marginTop: 30}]}
+          onPress= {()=>{}}>
           <Text style = {[styles.signIn, { color: '#fff'}, { fontWeight: 'bold'}, {fontSize: 20}]}> Sign In</Text>
-                 </View>
+          </TouchableOpacity>
           </View>
           </View>
   );
