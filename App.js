@@ -127,8 +127,9 @@ text_footer: {
       marginTop:5
   },
   button: {
-      alignItems: 'flex-end',
-      marginTop: 0
+      alignItems: 'center',
+      marginTop: 0,
+      backgroundColor: "#DDDDDD",
   },
   signIn: {
       width: 150,
@@ -222,10 +223,7 @@ const handlePasswordChange = (val) => {
             
           </View>
           <View style={styles.button}>
-                <TouchableOpacity
-                    style={styles.signIn}
-                    onPress={() => {}}
-                />
+          <Text style = {styles.signIn}> Sign In</Text>
                  </View>
           </View>
           </View>
